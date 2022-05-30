@@ -1,0 +1,189 @@
+JSON
+ 4. Создать внешний репозиторий c названием JSON.
+После авторизации на главной нажать Create a new repository
+
+ 5. Клонировать репозиторий JSON на локальный компьютер.
+Зайти в созданный репозиторий и скопировать его URL
+в терминале: git clone https://github.com/AlexanderScherba/JSON.git
+
+ 6. Внутри локального JSON создать файл “new.json”.
+cd JSON
+touch new.json
+
+ 7. Добавить файл под гит.
+git add new.json
+
+ 8. Закоммитить файл.
+git commit -m "new file"
+
+ 9. Отправить файл на внешний GitHub репозиторий.
+git push
+
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+echo "{\"firstname\":\"Alexander\",\"patronymic\":\"Vladimirovich\",\"lastname\":\"Scherba\",\"age\":43,\"pets\":5,\"salary\":10000}" >> new.json
+
+ 11. Отправить изменения на внешний репозиторий.
+git add new.json
+git commit -m "new data about user"
+git push
+
+ 12. Создать файл preferences.json
+touch preferences.json
+
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+echo "{\"movie\":\"YipMan\",\"serial\":\"Friends\",\"food\":\"Shashlik\",\"season\":\"Summer\",\"country\":\"Dominikana\"}" >> preferences.json
+
+ 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+echo "{\"skill1\":\"terminal\",\"skill2\":\"git\",\"skill3\":\"postman\",\"skill4\":\"android_studio\"}" >> sklls.json
+
+ 15. Отправить сразу 2 файла на внешний репозиторий.
+git add preferences.json sklls.json
+git commit -m "add two files"
+git push
+
+ 16. На веб интерфейсе создать файл bug_report.json.
+В репозитории Add File -> Create new file
+
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+В вебинтерфейсе под окном редактирования "Commit changes"
+
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+В вебинтерфейсе кликаем на файлик bug_report.json и нажимаем кнопку "Edit this file"
+Копируем в форму репорт:
+{
+"Title":"GUI вылетает при переходе на вкладку о программе",
+"Steps":{"Step1":"Открываем GUI через терминал или иконку",
+         "Step2":"Вызываем основное меню переводом курсора мыши в верхнюю часть окна GUI",
+         "Step3":"Выбираем пункт меню о программе"},
+"ActualResult":"GUI закрывается без предупреждеия, процессы из памяти удаляются",
+"ExpectedResult":"Открывается окно о программе с корректным содержимым"
+}
+
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Жмём кнопку commit под окном редактирования.
+
+ 20. Синхронизировать внешний и локальный репозиторий JSON
+git pull
+
+XML
+ 21. Создать внешний репозиторий c названием XML.
+После авторизации на главной нажать Create a new repository
+
+ 22. Клонировать репозиторий XML на локальный компьютер.
+git clone https://github.com/AlexanderScherba/XML.git
+
+ 23. Внутри локального XML создать файл “new.xml”.
+cd XML
+touch new.xml
+
+ 24. Добавить файл под гит.
+git add new.xml
+
+ 25. Закоммитить файл.
+git commit -m "add new.xml"
+
+ 26. Отправить файл на внешний GitHub репозиторий.
+git push
+
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+nano new.xml
+Вписываем построчно:
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <firstname>Alexander</firstname>
+  <patronymic>Vladimirovich</patronymic>
+  <lastname>Scherba</lastname>
+  <age>43</age>
+  <pets>5</pets>
+  <salary>10000</salary>
+</root>
+ctrl+O ; Enter - сохранить
+ctrl+X - выйти
+
+ 28. Отправить изменения на внешний репозиторий.
+git add .
+git commit -m "add personal info"
+git push
+
+ 29. Создать файл preferences.xml
+touch preferences.xml
+
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+nano preferences.xml
+Вписываем:
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <movie>YipMan</movie>
+  <serial>Friends</serial>
+  <food>Shashlik</food>
+  <season>Summer</season>
+  <country>Dominikana</country>
+</root>
+ctrl+O ; Enter - сохранить
+ctrl+X - выйти
+
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+nano skills.xml
+Вписываем:
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <skill1>terminal</skill1>
+  <skill2>git</skill2>
+  <skill3>postman</skill3>
+  <skill4>android_studio</skill4>
+</root>
+ctrl+O ; Enter - сохранить
+ctrl+X - выйти
+
+ 32. Сделать коммит в одну строку.
+git add preferences.xml skills.xml && git commit -m "commit 2 files"
+
+ 33. Отправить сразу 2 файла на внешний репозиторий.
+git push
+
+ 34. На веб интерфейсе создать файл bug_report.xml.
+В репозитории Add File -> Create new file
+
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Жмём кнопку commit под окном редактирования.
+
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+В вебинтерфейсе кликаем на файлик bug_report.json и нажимаем кнопку "Edit this file"
+Копируем в форму репорт:
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <Title>GUI вылетает при переходе на вкладку о программе</Title>
+  <Steps>
+    <Step1>Открываем GUI через терминал или иконку</Step1>
+    <Step2>Вызываем основное меню переводом курсора мыши в верхнюю часть окна GUI</Step2>
+    <Step3>Выбираем пункт меню о программе</Step3>
+  </Steps>
+  <ActualResult>GUI закрывается без предупреждеия, процессы из памяти удаляются</ActualResult>
+  <ExpectedResult>Открывается окно о программе с корректным содержимым</ExpectedResult>
+</root>
+
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Жмём кнопку commit под окном редактирования.
+
+ 38. Синхронизировать внешний и локальный репозиторий XML
+git pull
+
+TXT
+ 1. Создать внешний репозиторий c названием TXT.
+ 2. Клонировать репозиторий TXT на локальный компьютер.
+ 3. Внутри локального TXT создать файл “new.txt”.
+ 4. Добавить файл под гит.
+ 5. Закоммитить файл.
+ 6. Отправить файл на внешний GitHub репозиторий.
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+ 8. Отправить изменения на внешний репозиторий.
+ 9. Создать файл preferences.txt
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
+ 12. Сделать коммит в одну строку.
+ 13. Отправить сразу 2 файла на внешний репозиторий.
+ 14. На веб интерфейсе создать файл bug_report.txt.
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 18. Синхронизировать внешний и локальный репозиторий TXT
